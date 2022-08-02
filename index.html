@@ -1,179 +1,641 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220802173251">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «san-plus-one»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «san-plus-one»</h1>
-		<div class="rootpage__info">
-			Особенности проекта
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="" class="header__logo"><img src="img/logo-white.svg" alt="" /></a>
+					<div class="header__right">
+						<a href="" class="header__catalog">katalog</a>
+						<a href="" class="header__about-us">biz haqimizda</a>
+						<form action="" class="header__search-form">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input header__form-input" />
+							<button type="submit" class="header__search-btn _icon-search-icon"></button>
+						</form>
+						<div class="header__actions">
+							<a href="" class="header__lang">UZ</a>
+							<a href="" class="header__cart _icon-cart-icon"></a>
+							<a href="" class="header__user _icon-user-icon"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="hero ibg">
+				<picture><source srcset="img/hero-bg.webp" type="image/webp"><img src="img/hero-bg.jpg" alt="" /></picture>
+				<div class="hero__container">
+					<div class="hero__body">
+						<div class="hero__text">
+							<h2 class="hero__title">Yozgi mavsum uchun <br /><span>yangi ko‘rinish</span></h2>
+							<h4 class="hero__subtitle"></h4>
+							<button type="button" class="hero__btn button button--white">KO‘RISH</button>
+						</div>
+						<div class="hero__img">
+							<picture><source srcset="img/krasovka1.webp" type="image/webp"><img src="img/krasovka1.png" alt="" /></picture>
+						</div>
+					</div>
+					<a href="" class="hero__all-products _icon-all-products-icon"> Barcha mahsulotlar</a>
+				</div>
+			</section>
+
+			<section class="new-goods">
+				<div class="new-goods__container">
+					<h2 class="new-goods__title">Yangi mahsulotlar</h2>
+					<h4 class="new-goods__subtitle">Eng so‘nggi mahsulotlarimizni ko‘rib chiqing va tanlang</h4>
+
+					<!-- Оболочка слайдера -->
+					<div class="new-goods__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="new-goods__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="new-goods__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Если нужна пагинация -->
+					<div class="slider__bottom">
+						<button type="button" class="new-goods__button-prev _icon-slider-arrow-left"></button>
+						<div class="new-goods__pagination"></div>
+						<button type="button" class="new-goods__button-next _icon-slider-arrow-right"></button>
+					</div>
+				</div>
+				<!-- Если нужна навигация (влево/вправо) -->
+			</section>
+
+			<section class="most-viewed">
+				<div class="most-viewed__container">
+					<h2 class="most-viewed__title">Eng ko‘p ko‘rilgan mahsulotlar</h2>
+					<h4 class="most-viewed__subtitle">Mijozlarimiz tanlovlariga eng loyiq bo‘lgan mahsulotlarimiz</h4>
+					<div class="most-viewed__body">
+						<!-- Оболочка слайдера -->
+						<div class="most-viewed__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<div class="most-viewed__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="most-viewed__slide swiper-slide slide-item">
+									<picture><source srcset="img/product2.webp" type="image/webp"><img src="img/product2.jpg" alt="" /></picture>
+									<h3 class="slide-item__title">Mahsulot nomi</h3>
+									<h4 class="slide-item__suptitle">Tabiiy teridan tikilgan chidamli mahsulot</h4>
+								</div>
+								<div class="most-viewed__slide swiper-slide slide-item">
+									<picture><source srcset="img/product2.webp" type="image/webp"><img src="img/product2.jpg" alt="" /></picture>
+									<h3 class="slide-item__title">Mahsulot nomi</h3>
+									<h4 class="slide-item__suptitle">Tabiiy teridan tikilgan chidamli mahsulot</h4>
+								</div>
+								<div class="most-viewed__slide swiper-slide slide-item">
+									<picture><source srcset="img/product3.webp" type="image/webp"><img src="img/product3.jpg" alt="" /></picture>
+									<h3 class="slide-item__title">Mahsulot nomi</h3>
+									<h4 class="slide-item__suptitle">Tabiiy teridan tikilgan chidamli mahsulot</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class="most-viewed__bottom">
+							<div>
+								<button type="submit" class="button button--orange most-viewed__button">Sotib olish <span class="_icon-slider-arrow-right"></span></button>
+							</div>
+							<!-- Если нужна пагинация -->
+							<div>
+								<button type="button" class="most-viewed__button-prev _icon-slider-arrow-left"></button>
+							</div>
+							<div>
+								<div class="most-viewed__pagination"></div>
+							</div>
+							<!-- Если нужна навигация (влево/вправо) -->
+							<div>
+								<button type="button" class="most-viewed__button-next _icon-slider-arrow-right"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="most-sold">
+				<div class="most-sold__container">
+					<h2 class="most-sold__title">Yangi mahsulotlar</h2>
+					<h4 class="most-sold__subtitle">Eng so‘nggi mahsulotlarimizni ko‘rib chiqing va tanlang</h4>
+
+					<!-- Оболочка слайдера -->
+					<div class="most-sold__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="most-sold__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="most-sold__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="most-sold__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="most-sold__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="most-sold__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="most-sold__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="most-sold__slide swiper-slide card-item">
+								<div class="card-item__img">
+									<picture><source srcset="img/new-good1.webp" type="image/webp"><img src="img/new-good1.png" alt="Item" /></picture>
+								</div>
+								<div class="card-item__text">
+									<div class="card-item__name">Lorem ipsum</div>
+									<div class="card-item__info">
+										<div class="card-item__prices">
+											<div class="card-item__new-price">399 000</div>
+											<div class="card-item__old-price">499 000</div>
+										</div>
+										<a href="" class="card-item__share _icon-share-icon"></a>
+									</div>
+									<div class="card-item__bottom">
+										<button type="button" class="card-item__button button button-orange">Sotib olish</button>
+										<button type="button" class="card-item__button button button--white">Savatga</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Если нужна пагинация -->
+					<div class="slider__bottom">
+						<button type="button" class="most-sold__button-prev _icon-slider-arrow-left"></button>
+						<div class="most-sold__pagination"></div>
+						<button type="button" class="most-sold__button-next _icon-slider-arrow-right"></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="product-type">
+				<div class="product-type__container">
+					<h2 class="product-type__title">Mahsulotlarimiz turlari</h2>
+					<h4 class="product-type__subtitle">Kompaniyamiz tomonidan ishlab chiqariladigan poyabzal turlari</h4>
+					<div class="product-type__body">
+						<!-- Оболочка слайдера -->
+						<div class="product-type__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<div class="product-type__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="product-type__slide swiper-slide slide-item">
+									<picture><source srcset="img/product-type1.webp" type="image/webp"><img class="slide-item__img" src="img/product-type1.jpg" alt="Makasima" /></picture>
+									<div class="slide-item__title">Makasima</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-type__slide swiper-slide slide-item">
+									<picture><source srcset="img/product-type2.webp" type="image/webp"><img class="slide-item__img" src="img/product-type2.jpg" alt="Krossovka" /></picture>
+									<div class="slide-item__title">Krossovka</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-type__slide swiper-slide slide-item">
+									<picture><source srcset="img/product-type3.webp" type="image/webp"><img class="slide-item__img" src="img/product-type3.jpg" alt="Ishlov berilgan teri" /></picture>
+									<div class="slide-item__title">Ishlov berilgan teri</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-type__slide swiper-slide slide-item">
+									<picture><source srcset="img/product-type4.webp" type="image/webp"><img class="slide-item__img" src="img/product-type4.jpg" alt="Klassik krossovka" /></picture>
+									<div class="slide-item__title">Klassik krossovka</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-type__slide swiper-slide slide-item">
+									<picture><source srcset="img/product-type1.webp" type="image/webp"><img class="slide-item__img" src="img/product-type1.jpg" alt="Makasima" /></picture>
+									<div class="slide-item__title">Makasima</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-type__slide swiper-slide slide-item">
+									<picture><source srcset="img/product-type2.webp" type="image/webp"><img class="slide-item__img" src="img/product-type2.jpg" alt="Krossovka" /></picture>
+									<div class="slide-item__title">Krossovka</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-type__slide swiper-slide slide-item">
+									<picture><source srcset="img/product-type3.webp" type="image/webp"><img class="slide-item__img" src="img/product-type3.jpg" alt="Ishlov berilgan teri" /></picture>
+									<div class="slide-item__title">Ishlov berilgan teri</div>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="product-type__button-prev _icon-slider-arrow-left"></button>
+						<button type="button" class="product-type__button-next _icon-slider-arrow-right"></button>
+						<button type="button" class="button product-type__catalog-button">KATALOGGA O‘TISH <span class="_icon-slider-arrow-right"></span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts ibg">
+				<picture><source srcset="img/footer-bg.webp" type="image/webp"><img src="img/footer-bg.jpg" alt="" /></picture>
+				<div class="contacts__container">
+					<h2 class="contacts__title">Siz bilan bog‘lanishdan mamnunmiz!</h2>
+					<div class="contacts__address">
+						<div class="contacts__address-label">Manzilimiz:</div>
+						Toshkent Shahar, Birnarsa tumani, Birnarsa ko‘cha 12-uy.
+					</div>
+					<div class="contacts__phones">
+						<div class="contacts__phones-label">Murojaat uchun telefon:</div>
+						<a href="tel:+998884130000" class="contacts__phone">+998 (88) 413 00 00</a>
+					</div>
+					<div class="contacts__social">
+						<div class="contacts__social-label">Ijtimoiy tarmoqlarda bizni toping</div>
+						<div class="contacts__social-icons">
+							<a href="" class="contacts__social-instagram _icon-instagram-icon"></a>
+							<a href="" class="contacts__social-facebook _icon-facebook-icon"></a>
+							<a href="" class="contacts__social-telegram _icon-telegram-icon"></a>
+						</div>
+					</div>
+					<button type="button" class="contacts__register-button">RO‘YXATDAN O‘TISH <span class="_icon-slider-arrow-right"></span></button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__logo footer__column">
+						<a href="" class="footer__logo"><img src="img/logo-yellow.svg" alt="Logo" /></a>
+						<a href="tel:+998884130000" class="footer__phone">+998 (88) 413 00 00</a>
+					</div>
+					<div class="footer__social footer-social footer__column">
+						<a href="" class="footer-social__instagram _icon-instagram-icon"></a>
+						<a href="" class="footer-social__facebook _icon-facebook-icon"></a>
+						<a href="" class="footer-social__telegram _icon-telegram-icon"></a>
+					</div>
+					<div class="footer__menu footer__column">
+						<ul>
+							<li class="footer__menu-list"><a href="" class="footer__menu-link">BIZ HAQIMIZDA</a></li>
+							<li class="footer__menu-list"><a href="" class="footer__menu-link">KATALOG</a></li>
+						</ul>
+					</div>
+					<div class="footer__the-most footer__column">
+						<ul>
+							<li class="footer__menu-list"><a href="" class="footer__menu-link">ENG KO‘P SOTILGAN</a></li>
+							<li class="footer__menu-list"><a href="" class="footer__menu-link">ENG KO‘P KO‘RILGAN</a></li>
+							<li class="footer__menu-list"><a href="" class="footer__menu-link">YANGILIKLAR</a></li>
+						</ul>
+					</div>
+					<div class="footer__payments footer__column">
+						<a href="" class="footer__payment footer__payment--click"><picture><source srcset="img/click-icon.webp" type="image/webp"><img src="img/click-icon.png" alt="click" /></picture></a>
+						<a href="" class="footer__payment footer__payment--payme"><picture><source srcset="img/payme-icon.webp" type="image/webp"><img src="img/payme-icon.png" alt="payme" /></picture></a>
+						<a href="" class="footer__payment footer__payment--humo"><picture><source srcset="img/humo-icon.webp" type="image/webp"><img src="img/humo-icon.png" alt="humo" /></picture></a>
+						<a href="" class="footer__payment footer__payment--uzcard"><picture><source srcset="img/uzcard-icon.webp" type="image/webp"><img src="img/uzcard-icon.png" alt="uzcard" /></picture></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
 		</div>
 	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20220802173251"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
